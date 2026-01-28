@@ -1,4 +1,5 @@
 import React from "react";
+import avatar from "@/assets/ICON-AVATAR-WILL_T.png";
 
 const Footer = ({ completedTasksCount = 0, activeTasksCount = 0 }) => {
   return (
@@ -20,6 +21,12 @@ const Footer = ({ completedTasksCount = 0, activeTasksCount = 0 }) => {
           </p>
         </div>
       )}
+      <div className="text-center mt-2">
+        <p className="flex items-center justify-center text-xs text-muted-foreground">
+          <img src={avatar} alt="icon" className="inline h-6 w-6 mr-1" />
+          Made by Will_T
+        </p>
+      </div>
     </>
   );
 };
